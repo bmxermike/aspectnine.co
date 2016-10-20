@@ -23,7 +23,7 @@
     <div id="wrapper">
         <!-- Header -->
         <header class="desktopMenu" id="header">
-            <h1><a href="index.html"><strong>Michael Eldridge</strong> Digital Designer</a></h1>
+            <img src="/images/home/AspectNine_Logo_01.png" width="50px;" style="padding-top: 10px;">
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -57,11 +57,13 @@
                 <div class="home-message">
                     <h2>Let's tell inspiring stories</h2>
                     <h1>Together</h1> </div>
+                <a href="#home_02">
                 <svg class="arrows">
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
                     <path class="a2" d="M0 20 L30 52 L60 20"></path>
                     <path class="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
+                </a>
             </center>
         </div>
         <!-- HOME_02 -->
@@ -71,19 +73,19 @@
             <div class="flex-container services">
                 <div class="flex-item"> <img src="images/home/icon-social.png" width="200px">
                     <h4>Social</h4>
-                    <p> Facebook, Instagram, Twitter, Snapchat and More. Social media engagment is driven by photo and video content. Connect with your customers and get your name out there with posts people will enjoy looking at. </p>
+                    <p> Facebook, Instagram, Twitter, Snapchat and More. Social media engagement is driven by photo and video content. Connect with your customers and get your name out there with posts people will enjoy looking at.</p>
                 </div>
                 <div class="flex-item"> <img src="images/home/icon-ident.png" width="200px">
                     <h4>Identity</h4>
-                    <p>Starting fresh or just need a refresh, consistant brand assets are essential in your business toolkit. Let's get your brand on track to communicate the values it stands for.</p>
+                    <p>Starting fresh or just need a refresh, consistent brand assets are essential in your business toolkit. Let's get your brand on track to communicate the values it stands for.</p>
                 </div>
                 <div class="flex-item"> <img src="images/home/icon-graphic.png" width="200px">
                     <h4>Graphic Design</h4>
-                    <p>General graphic design services ranging from flyers, posters, sports jerseys, web banners, and more. Get in touch today for more informaiton.</p>
+                    <p>General graphic design services ranging from flyers, posters, sports jerseys, web banners, and more. Get in touch today for more information.</p>
                 </div>
                 <div class="flex-item"> <img src="images/home/icon-narrative.png" width="200px">
                     <h4>Narrative</h4>
-                    <p>Photo + Video + Motion Graphics.<br>All key componets to telling stories on screen. Wheather it's short or long, simple or comples, let's make something inspiring. </p>
+                    <p>Photo + Video + Motion Graphics.<br>All key components to telling stories on screen. Whether it's short or long, simple or complex, let's make something inspiring.</p>
                 </div>
             </div>
         </div>
@@ -92,7 +94,7 @@
         <div class="flex-container-left">
             <div class="flex-item-left">
                 <h2>Freeze time - Tell stories</h2>
-                <p>We must remember that a photograph can hold just as much as we put into it, and no one has ever approached the full possibilities of the medium.</p>
+                <p>"We must remember that a photograph can hold just as much as we put into it, and no one has ever approached the full possibilities of the medium."</p>
                 <i>–Ansel Adams</i>
 <br><br>
                <button onclick="visitPageStills();">View Still Photography</button>
@@ -125,7 +127,7 @@
         <div id="home_05">
         <div class="flex-container-right">
             <div class="flex-item-right">
-                <h2>Experience Journies</h2>
+                <h2>Experience Journeys</h2>
                 <p>Immerse yourself in narrative experiences.<br> Get inspired to do something different.</p>
                  <button onclick="visitPageMotion();">View Video & Motion Design</button>
 
@@ -202,5 +204,20 @@
         ga('send', 'pageview');
     </script>
 </body>
+
+
+    <script>
+
+        $('#home_01 a').on('click', function(e) {
+  e.preventDefault();
+  $link = $(this).attr('href');
+
+  $('html, body').animate({
+    scrollTop: $($link).offset().top - 10
+  }, 800 );
+});
+
+    </script>
+
 
 </html>
